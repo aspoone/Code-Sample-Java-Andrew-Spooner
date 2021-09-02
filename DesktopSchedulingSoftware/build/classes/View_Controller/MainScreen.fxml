@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="700.0" maxWidth="1100.0" prefHeight="700.0" prefWidth="1100.0" style="-fx-background-color: #aeaeae;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane fx:id="calendarTabPane" layoutX="25.0" layoutY="50.0" maxHeight="575.0" maxWidth="1050.0" minHeight="470.0" minWidth="1050.0" prefHeight="575.0" prefWidth="1050.0" style="-fx-background-color: #FFFFFF;" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="tabWeekly" closable="false" onSelectionChanged="#focusWeeklyTab" text="Weekly Schedule">
+               <content>
+                  <TableView fx:id="weeklyTable" fixedCellSize="65.0" maxHeight="500.0" prefHeight="500.0" prefWidth="1050.0">
+                    <columns>
+                      <TableColumn fx:id="colSunday" prefWidth="150.0" text="Sunday">
+                          <cellValueFactory>
+                             <PropertyValueFactory property="sunday" /> 
+                          </cellValueFactory>
+                      </TableColumn>
+                      <TableColumn fx:id="colMonday" prefWidth="150.0" text="Monday">
+                          <cellValueFactory>
+                             <PropertyValueFactory property="monday" /> 
+                          </cellValueFactory>
+                      </TableColumn>
+                        <TableColumn fx:id="colTuesday" prefWidth="150.0" text="Tuesday">
+                          <cellValueFactory>
+                             <PropertyValueFactory property="tuesday" /> 
+                          </cellValueFactory>
+                      </TableColumn>
+                        <TableColumn fx:id="colWednesday" prefWidth="150.0" text="Wednesday">
+                          <cellValueFactory>
+                             <PropertyValueFactory property="wednesday" /> 
+                          </cellValueFactory>
+                      </TableColumn>
+                        <TableColumn fx:id="colThursday" prefWidth="150.0" text="Thursday">
+                          <cellValueFactory>
+                             <PropertyValueFactory property="thursday" /> 
+                          </cellValueFactory>
+                      </TableColumn>
+                        <TableColumn fx:id="colFriday" prefWidth="150.0" text="Friday">
+                          <cellValueFactory>
+                             <PropertyValueFactory property="friday" /> 
+                          </cellValueFactory>
+                      </TableColumn>
+                        <TableColumn fx:id="colSaturday" prefWidth="150.0" text="Saturday">
+                          <cellValueFactory>
+                             <PropertyValueFactory property="saturday" /> 
+                          </cellValueFactory>
+                      </TableColumn>
+                    </columns>
+                  </TableView>
+               </content>
+          </Tab>
+          <Tab fx:id="tabMonthly" closable="false" onSelectionChanged="#focusMonthlyTab" text="Monthly Schedule">
+               <content>
+                  <TableView fx:id="monthlyTable" fixedCellSize="87.0" prefHeight="500.0" prefWidth="1050.0">
+                     <columns>
+                        <TableColumn fx:id="colSunday1" prefWidth="150.0" text="Sunday">
+                           <cellValueFactory>
+                             <PropertyValueFactory property="sunday" /> 
+                          </cellValueFactory>
+                      </TableColumn>
+                      <TableColumn fx:id="colMonday1" prefWidth="150.0" text="Monday">
+                          <cellValueFactory>
+                             <PropertyValueFactory property="monday" /> 
+                          </cellValueFactory>
+                      </TableColumn>
+                        <TableColumn fx:id="colTuesday1" prefWidth="150.0" text="Tuesday">
+                          <cellValueFactory>
+                             <PropertyValueFactory property="tuesday" /> 
+                          </cellValueFactory>
+                      </TableColumn>
+                        <TableColumn fx:id="colWednesday1" prefWidth="150.0" text="Wednesday">
+                          <cellValueFactory>
+                             <PropertyValueFactory property="wednesday" /> 
+                          </cellValueFactory>
+                      </TableColumn>
+                        <TableColumn fx:id="colThursday1" prefWidth="150.0" text="Thursday">
+                          <cellValueFactory>
+                             <PropertyValueFactory property="thursday" /> 
+                          </cellValueFactory>
+                      </TableColumn>
+                        <TableColumn fx:id="colFriday1" prefWidth="150.0" text="Friday">
+                          <cellValueFactory>
+                             <PropertyValueFactory property="friday" /> 
+                          </cellValueFactory>
+                      </TableColumn>
+                        <TableColumn fx:id="colSaturday1" prefWidth="150.0" text="Saturday">
+                          <cellValueFactory>
+                             <PropertyValueFactory property="saturday" /> 
+                          </cellValueFactory>
+                      </TableColumn>
+                     </columns>
+                  </TableView>
+               </content></Tab>
+        </tabs>
+      </TabPane>
+      <Label fx:id="lblDSS" layoutX="22.0" layoutY="14.0" prefHeight="30.0" prefWidth="224.0" text="Desktop Scheduling Software">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnViewCustRecords" layoutX="25.0" layoutY="646.0" mnemonicParsing="false" onMouseClicked="#openCustRecords" text="View Customer Records" />
+      <Button fx:id="btnViewSelectedAppts" layoutX="178.0" layoutY="646.0" mnemonicParsing="false" onMouseClicked="#openSelectedAppts" text="View Selected Appointments" />
+      <Button fx:id="btnAddAppt" layoutX="677.0" layoutY="646.0" mnemonicParsing="false" onMouseClicked="#openAddAppointment" text="Add Appointment" />
+      <Button fx:id="btnUpdateAppt" layoutX="800.0" layoutY="646.0" mnemonicParsing="false" onMouseClicked="#openUpdateAppointment" text="Update Appointment" />
+      <Button fx:id="btnDeleteAppt" layoutX="939.0" layoutY="646.0" mnemonicParsing="false" onMouseClicked="#deleteAppointment" text="Delete Appointment" />
+      <MenuButton fx:id="menuLogOutExit" layoutX="964.0" layoutY="14.0" mnemonicParsing="false" text="Log Out / Exit">
+        <items>
+          <MenuItem fx:id="logOut" mnemonicParsing="false" onAction="#logOut" text="Log Out" />
+          <MenuItem fx:id="exitApp" mnemonicParsing="false" onAction="#exitApp" text="Exit" />
+        </items>
+      </MenuButton>
+      <Button fx:id="btnViewReports" layoutX="357.0" layoutY="646.0" mnemonicParsing="false" onMouseClicked="#openReports" text="View Reports" />
+   </children>
+</AnchorPane>

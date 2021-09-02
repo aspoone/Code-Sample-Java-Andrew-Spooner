@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #aeaeae;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="lblReports" layoutX="345.0" layoutY="15.0" text="Reports">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <TabPane fx:id="reportsTabPane" layoutX="25.0" layoutY="75.0" prefHeight="473.0" prefWidth="750.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="monthlyApptTypesTab" text="Monthly Appointment Types">
+               <content>
+                  <TextArea fx:id="txtMonthlyApptTypes" editable="false" prefHeight="520.0" prefWidth="750.0" />
+               </content>
+            </Tab>
+          <Tab fx:id="consultantSchedulesTab" text="Consultant Schedules">
+               <content>
+                  <TextArea fx:id="txtConsultantSchedules" editable="false" prefHeight="200.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+            <Tab fx:id="activeCustByCityTab" text="Active Customers by City">
+               <content>
+                  <TextArea fx:id="txtActiveCustByCity" editable="false" prefHeight="200.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Button fx:id="btnReturnToMS" layoutX="640.0" layoutY="561.0" mnemonicParsing="false" onMouseClicked="#returnToMS" text="Return to Main Screen" />
+   </children>
+</AnchorPane>

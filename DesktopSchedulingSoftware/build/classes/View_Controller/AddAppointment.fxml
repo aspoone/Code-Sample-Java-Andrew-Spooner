@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="436.0" prefWidth="500.0" style="-fx-background-color: #aeaeae;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="lblAddAppt" layoutX="131.0" layoutY="14.0" prefHeight="36.0" prefWidth="238.0" text="ADD APPOINTMENT">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblName" layoutX="25.0" layoutY="70.0" text="Name" />
+      <Label fx:id="lblTitle" layoutX="25.0" layoutY="104.0" text="Title" />
+      <Label fx:id="lblType" layoutX="25.0" layoutY="138.0" text="Type" />
+      <Label fx:id="lblLocation" layoutX="25.0" layoutY="172.0" text="Location" />
+      <Label fx:id="lblContact" layoutX="272.0" layoutY="172.0" text="Contact" />
+      <Label fx:id="lblURL" layoutX="25.0" layoutY="206.0" text="URL" />
+      <Label fx:id="lblDescription" layoutX="25.0" layoutY="240.0" text="Description" />
+      <Label fx:id="lblDate" layoutX="25.0" layoutY="336.0" text="Date" />
+      <Label fx:id="lblTime" layoutX="289.0" layoutY="336.0" text="Time" />
+      <ComboBox fx:id="comboName" layoutX="100.0" layoutY="66.0" prefHeight="25.0" prefWidth="253.0" />
+      <TextField fx:id="txtTitle" layoutX="100.0" layoutY="100.0" prefHeight="25.0" prefWidth="373.0" promptText="Title" />
+      <TextField fx:id="txtType" layoutX="100.0" layoutY="134.0" prefHeight="25.0" prefWidth="373.0" promptText="Type" />
+      <TextField fx:id="txtLocation" layoutX="100.0" layoutY="168.0" prefHeight="25.0" prefWidth="149.0" promptText="Location" />
+      <TextField fx:id="txtContact" layoutX="324.0" layoutY="168.0" promptText="Contact" />
+      <TextField fx:id="txtURL" layoutX="100.0" layoutY="202.0" prefHeight="25.0" prefWidth="373.0" promptText="URL" />
+      <TextField fx:id="txtDescription" alignment="TOP_LEFT" layoutX="100.0" layoutY="236.0" prefHeight="88.0" prefWidth="373.0" promptText="Description" />
+      <DatePicker fx:id="dpBox" editable="false" layoutX="100.0" layoutY="332.0" onHidden="#updateAvailableTimes" />
+      <ChoiceBox fx:id="timeCBBox" layoutX="325.0" layoutY="332.0" prefWidth="150.0" />
+      <Button fx:id="btnAddNewCust" layoutX="24.0" layoutY="389.0" mnemonicParsing="false" onMouseClicked="#openAddCustomerRecord" text="Add New Customer" />
+      <Button fx:id="btnSave" layoutX="306.0" layoutY="389.0" mnemonicParsing="false" onMouseClicked="#saveAppointment" prefHeight="25.0" prefWidth="75.0" text="Save" />
+      <Button fx:id="btnCancel" layoutX="399.0" layoutY="389.0" mnemonicParsing="false" onMouseClicked="#cancelChanges" prefHeight="25.0" prefWidth="75.0" text="Cancel" />
+   </children>
+</AnchorPane>

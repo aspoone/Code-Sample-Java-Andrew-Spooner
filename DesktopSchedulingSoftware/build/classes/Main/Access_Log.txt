@@ -1,0 +1,12 @@
+User: test, Location: United States,  Date/Time: 2020-10-23 15:46:26 Pacific Daylight Time GMT-07:00
+User: test, Location: United States,  Date/Time: 2020-10-23 15:53:56 Pacific Daylight Time GMT-07:00
+User: test, Location: United States,  Date/Time: 2020-10-23 16:08:55 Pacific Daylight Time GMT-07:00
+User: test, Location: United States,  Date/Time: 2020-10-23 16:11:12 Pacific Daylight Time GMT-07:00
+User: test, Location: United States,  Date/Time: 2020-10-23 16:13:52 Pacific Daylight Time GMT-07:00
+User: test, Location: United States,  Date/Time: 2020-10-23 16:16:35 Pacific Daylight Time GMT-07:00
+User: test, Location: United States,  Date/Time: 2020-10-23 16:18:48 Pacific Daylight Time GMT-07:00
+User: test, Location: United States,  Date/Time: 2020-10-23 16:20:07 Pacific Daylight Time GMT-07:00
+User: test, Location: United States,  Date/Time: 2020-10-23 16:21:13 Pacific Daylight Time GMT-07:00
+User: test, Location: United States,  Date/Time: 2020-10-23 16:26:04 Pacific Daylight Time GMT-07:00
+User: test, Location: United States,  Date/Time: 2020-10-23 16:32:04 Pacific Daylight Time GMT-07:00
+User: test, Location: United States,  Date/Time: 2020-10-23 16:38:26 Pacific Daylight Time GMT-07:00
